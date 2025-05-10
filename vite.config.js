@@ -10,7 +10,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'), // So @/components/... points to src/components/...
     },
   },
-  server: {
-    historyApiFallback: true,
-  },
+  // server: {
+  //   historyApiFallback: true,
+  // },
 })
