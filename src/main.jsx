@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./index.css"
 import HomePage from "./pages/Home.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ParticlesComponent from "./components/ParticlesBackground.jsx";
@@ -158,11 +158,17 @@ const proRouter = createBrowserRouter([
       },
       {
         path: "/PasswordUpdate",
-        element: <PasswordUpdatePage />,
+        element: 
+        <Layout>
+        <PasswordUpdate />,
+        </Layout>
       },
       {
-        path: "/PhotoUpdate",
-        element: <PhotoUpdatePage />,
+        path: "/UpdatePhoto",
+        element: 
+        <Layout>
+        <UpdatePhotoPage />,
+        </Layout>
       },
       {
         path: "/Transactions",
